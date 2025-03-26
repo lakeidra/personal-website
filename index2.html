@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luxury Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #F8F5E9;
+      color: #2C2C2C;
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #6A1F44;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .accent {
+      color: #D4AF37;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: #6A1F44;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .testimonial {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 1rem;
+    }
+    .btn-gold {
+      background-color: #D4AF37;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">LuxuryBrand</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Elevate Your Experience</h1>
+    <p class="accent">Bespoke. Exclusive. Exceptional.</p>
+    <button class="btn btn-gold mt-4">Get Started</button>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="section-title text-center">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card p-4">
+          <h4>Consulting</h4>
+          <p>Tailored strategies that drive innovation and growth.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4">
+          <h4>Training</h4>
+          <p>World-class education programs to empower leaders and teams.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4">
+          <h4>Speaking</h4>
+          <p>Inspirational talks delivered at prestigious events globally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="section-title text-center">Testimonials</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 testimonial">
+        <p>"Absolutely unparalleled service. It was an experience like no other!"</p>
+        <p class="fw-bold">– Satisfied Client</p>
+      </div>
+      <div class="col-md-4 testimonial">
+        <p>"A game-changer for our company. Elevated our approach to excellence."</p>
+        <p class="fw-bold">– CEO, Elite Corp</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="section-title text-center">Contact Us</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Full Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email Address" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-gold">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="text-center py-4">
+    <p>&copy; 2025 LuxuryBrand. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
