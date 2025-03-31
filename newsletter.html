@@ -3,56 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Newsletter | Lakeidra</title>
-  <link rel="stylesheet" href="css/style.css" />
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Optional Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Bootstrap Icons CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Lakeidra Smith | The Cyber Consultant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #000;
+      color: #F8F5E9;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #F8F5E9;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .section {
+      padding: 4rem 1rem;
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #D4AF37;
+      color: #F8F5E9;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      border-radius: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+    .text-column {
+      flex: 1 1 60%;
+    }
+    .image-column {
+      flex: 1 1 35%;
+      background-color: #2C2C2C;
+      min-height: 200px;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+      .nav-links {
+        justify-content: center;
+      }
+      .section {
+        flex-direction: column;
+      }
+      .text-column, .image-column {
+        flex: 1 1 100%;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    
-    <nav>
-      <div class="logo">
-        <a href="index.html">
-          <img src="/personal-website/images/transparent-icon-3.png" alt="TCC Logo" />
-        </a>
-      </div>
-    
+  <nav>
+    <div><strong>Lakeidra Smith</strong></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#training">Training</a>
+      <a href="#consulting">Consulting</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Cybersecurity That Cuts Through the Noise. Guidance That Sticks.</h1>
+    <h2>Because firewalls can’t fix human behavior—but I can.</h2>
+    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSeUA9alBmFeUd7XtMFFQSsa4eJPle8ITuHhTUwRuezCjQnf3A/viewform?usp=dialog">BOOK LAKEIDRA to Speak</a>
+  </section>
+
+  <section class="section" id="about">
+    <div class="text-column">
+      <h2>I’m Lakeidra. But You Can Call Me “The Cyber Consultant.”</h2>
+      <p>I’m here to humanize cybersecurity.</p>
+      <p>Cybersecurity isn’t just tech—it’s <em>people</em>. And I’ve made it my mission to bring the human element front and center.</p>
+      <p>I’m a published author, cybersecurity educator, and speaker trusted by C-level execs, school districts, and national conferences alike. My book <em>Cyber Curiosity</em> didn’t just hit shelves—it started conversations.</p>
+      <p><strong>Fun fact:</strong> I once ordered a printer by accident at age 7. That curiosity? It never left. Now, I just use it to protect people.</p>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li class="dropdown">
-          <a href="#">Services</a>
-          <ul class="dropdown-content">
-            <li><a href="services.html">Consulting</a></li>
-            <li><a href="training.html">Training</a></li>
-            <li><a href="speaking.html">Speaking</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="newsletter.html">Newsletter</a></li>
+        <li>Real-world experience</li>
+        <li>Engaging educator</li>
+        <li>Culture-forward security strategist</li>
       </ul>
-    </nav>
-  </header>
+      <p><strong>Let’s make cybersecurity less intimidating—and a whole lot more empowering.</strong></p>
+    </div>
+    <div class="image-column">
+      <img src="/personal-website/images/lakeidrawalking.jpg" alt="Lakeidra Smith Speaking" style="width:100%; height: auto; object-fit: cover;">
+    </div>
+  </section>
 
-  <main>
-    <section>
-      <h2>Join My Newsletter</h2>
-      <p>Get the latest insights on cybersecurity, digital transformation, and leadership.</p>
-      <form action="https://YOUR_NEWSLETTER_SERVICE_URL" method="POST">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Lakeidra. All rights reserved.</p>
-  </footer>
+  <section class="section" id="speaking">
+    <div class="text-column">
+      <h2>Speaking</h2>
+      <p><strong>Keynotes That Spark Minds. Workshops That Shift Cultures.</strong></p>
+      <p>Whether I’m speaking to a boardroom or a room full of students, I make cybersecurity personal, practical, and <em>powerful</em>.</p>
+      <ul>
+        
+        <li><em>The Cyber Curiosity Mindset: Building a Human-First Security Culture</em></li>
+        <li><em>Beyond the Firewall Why People Are Still Your Biggest Risk (and Asset)</em></li>
+        <li><em>The Privacy Paradox: Protecting Data in the Age of Oversharing</em></li>
+      </ul>
+      <p><strong>Custom sessions available for executive offsites, summits, and leadership retreats.</strong></p>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSeUA9alBmFeUd7XtMFFQSsa4eJPle8ITuHhTUwRuezCjQnf3A/viewform?usp=dialog">Book Kei to Speak</a>
+    </div>
+    <div class="image-column">
+      <img src="/personal-website/images/lakeidrawalking.jpg" alt="Lakeidra Smith Speaking" style="width:100%; height: auto; object-fit: cover;">
+    </div>
+  </section>
+
+  <section class="section" id="training">
+    <div class="text-column">
+      <h2>Training</h2>
+      <p><strong>Training That Sticks. Culture That Secures.</strong></p>
+      <ul>
+        <li><strong>CyberSecure Culture Program</strong></li>
+        <li><strong>Corporate Training Excellence Package</strong></li>
+        <li><strong>Next-Gen Cyber Curriculum</strong></li>
+        <li><strong>Elite Cybersecurity Leadership Series</strong></li>
+      </ul>
+      <a class="button" href="mailto:support@lakeidrasmith.com">Schedule a Discovery Call</a>
+    </div>
+    <div class="image-column"></div>
+  </section>
+
+  <section class="section" id="consulting">
+    <div class="text-column">
+      <h2>Consulting</h2>
+      <p><strong>Cybersecurity Consulting with a Human Core—and a Strategic Edge</strong></p>
+      <ul>
+        <li>CISOs and CIOs tired of bandaid solutions</li>
+        <li>HR and compliance teams looking to reduce human risk</li>
+        <li>Schools, nonprofits, and community orgs building cyber awareness from the ground up</li>
+        <li>Tech companies ready to align security with <em>values</em></li>
+        <li>Executives who understand cybersecurity is a <strong>boardroom</strong> issue</li>
+      </ul>
+      <a class="button" href="mailto:support@lakeidrasmith.com">Request Information</a>
+    </div>
+    <div class="image-column"></div>
+  </section>
 </body>
 </html>
